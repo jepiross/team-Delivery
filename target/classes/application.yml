@@ -37,6 +37,12 @@ logging:
     org.springframework.cloud: debug
 server:
   port: 8083
+
+
+api:
+  schedule:
+    url: http://localhost:8085
+
 ---
 
 spring:
@@ -62,3 +68,6 @@ spring:
         event-out:
           destination: rentalService
           contentType: application/json
+api:
+  schedule:
+    url: http://Schedule:8080
